@@ -8,24 +8,35 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import CourseCard from "./courseCard"
 
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+const data = useStaticQuery(graphql`
+  {
+    courses {
+      externalResources {
+      id
+      title
+      description
+      linkURL
+      logoURL
+      votes {
+        positive
       }
     }
+    }
+  }
   `)
+  var i = 0
+  console.log("working")
+  console.log(data)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <div
         style={{
           margin: `0 auto`,
@@ -34,6 +45,16 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        <div className="container">
+                    <section className="post-feed">
+                        {data.courses.externalResources.map( course => (
+                            // The tag below includes the markup for each post - components/common/PostCard.js
+                            <CourseCard key={course.id} course={course} />
+                            
+                        ))}
+                    </section>
+                    {/* <Pagination pageContext={pageContext} /> */}
+        </div>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
@@ -48,4 +69,22 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
+// export const query = graphql`
+// {
+//   courses {
+//     externalResources {
+//     id
+//     title
+//     description
+//     linkURL
+//     logoURL
+//     votes {
+//       positive
+//     }
+//   }
+//   }
+// }
+// `
+
 export default Layout
+
