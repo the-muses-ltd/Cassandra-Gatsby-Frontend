@@ -7,33 +7,13 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import CourseCard from "./courseCard"
 
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-const data = useStaticQuery(graphql`
-  {
-    courses {
-      externalResources {
-      id
-      title
-      description
-      linkURL
-      logoURL
-      votes {
-        positive
-      }
-    }
-    }
-  }
-  `)
-  var i = 0
-  console.log("working")
-  console.log(data)
-
   return (
     <>
       <Header />
@@ -45,16 +25,6 @@ const data = useStaticQuery(graphql`
         }}
       >
         <main>{children}</main>
-        <div className="container">
-                    <section className="post-feed">
-                        {data.courses.externalResources.map( course => (
-                            // The tag below includes the markup for each post - components/common/PostCard.js
-                            <CourseCard key={course.id} course={course} />
-                            
-                        ))}
-                    </section>
-                    {/* <Pagination pageContext={pageContext} /> */}
-        </div>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
@@ -62,7 +32,7 @@ const data = useStaticQuery(graphql`
         </footer>
       </div>
     </>
-  )
+    )
 }
 
 Layout.propTypes = {

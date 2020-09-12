@@ -35,6 +35,8 @@ const Header = ({ siteTitle }) => (
                   <div className="site-nav-left">
 
                       {/* <Navigation data={site.navigation} navClass="site-nav-item" /> */}
+
+                      <Link className="site-nav-button" to="/page-2/">All Resources</Link> <br />
                   </div>
                   <div className="site-nav-right">
                       <Link className="site-nav-button" to="/about">About</Link>

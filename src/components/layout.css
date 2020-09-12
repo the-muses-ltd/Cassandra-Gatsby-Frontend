@@ -530,7 +530,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .container {
@@ -675,3 +675,52 @@ header {
   width: 26px;
 }
 
+.index-title {
+  margin-top: 30px;
+}
+
+/* Hero */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0 0 0;
+}
+
+.site-nav-left {
+  margin: 0 20px 0 -10px;
+}
+
+.site-nav-button {
+  display: inline-block;
+  padding: 5px 10px;
+  border: #fff 1px solid;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1em;
+  border-radius: var(--radius);
+  opacity: 0.7;
+}
+
+
+.site-nav-item {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.site-nav-item:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.site-nav-icon {
+  height: 15px;
+  margin: -5px 0 0;
+}
+
+.courses-top-title {
+  margin-top: 30px;
+}
