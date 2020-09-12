@@ -52,7 +52,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
   Gatsby Frontend
 </h1>
 
-We use Gatsby.js for a a few reasons. 
+We use Gatsby.js for a a few reasons: 
 1. It's built for performance, so we get optimal load speeds.
 2. Static pages require less data to be used by our learners, meaning it's more accessable.
 3. We love new and cutting edge stacks!
@@ -66,7 +66,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+- **To dive straight into code samples, head [to their documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 <p align="center">
   <a href="https://www.prisma.io/">
@@ -78,3 +78,5 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 </h1>
 
 Using a GraphQL database not only allows us to further reduce the cost of accessing data to our students, but has future proofed our data to be used by other non-profit organisations.
+
+- **Interested in learning GraphQL or the Prisma framework? [Take a look at their documentation.(https://www.prisma.io/docs/).** 
