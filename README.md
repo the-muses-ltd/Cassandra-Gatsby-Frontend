@@ -79,4 +79,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 Using a GraphQL database not only allows us to further reduce the cost of accessing data to our students, but has future proofed our data to be used by other non-profit organisations.
 
-- **Interested in learning GraphQL or the Prisma framework? [Take a look at their documentation.(https://www.prisma.io/docs/).** 
+- **Interested in learning GraphQL or the Prisma framework? [Take a look at their documentation.(https://www.prisma.io/docs/)].** 
