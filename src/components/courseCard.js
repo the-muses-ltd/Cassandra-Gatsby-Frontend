@@ -9,12 +9,16 @@ const CourseCard = ({ course }) => {
     // const readingTime = readingTimeHelper(post)
 
     return (
-        <Link to={url} className="post-card">
+        <Link to={course.linkURL} target="_blank" className="post-card">
             <header className="post-card-header">
-                {course.logoURL &&
+                {course.logoURL ? 
                     <div className="post-card-image" style={{
-                        backgroundImage: `url(${course.logoURL})` , // image url
-                    }}></div>}
+                        backgroundImage: `url(${course.logoURL})` , 
+                    }}></div> : 
+                    <div className="post-card-image" style={{
+                        backgroundImage: `` , 
+                    }}></div>
+                }
                 {/* {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>} */}
                 {/* {post.featured && <span>Featured</span>} */}
                 <h2 className="post-card-title">{course.title}</h2>
