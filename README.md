@@ -14,7 +14,7 @@ A platform to distribute educational resources online, which will be freely avai
 
 ## 🚀 Quick start
 
-## Setuting up for your Local Development
+## Setting up for your Local Development
 
 1.  **Download the repository.**
 
