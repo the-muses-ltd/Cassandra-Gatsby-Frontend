@@ -1,27 +1,24 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# Cassandra Open Education
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+A platform to distribute educational resources online, which will be freely available to anyone. The aim is to facilitate equal access to education for all.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+## Documentation
+
+* [About Cassandra](https://the-muses.gitbook.io/cassandra/untitled/cassandra-open-education)
+* [Cassandra Road Map](https://the-muses.gitbook.io/cassandra/untitled/cassandra-road-map)
+* [Contributing Guidelines](https://the-muses.gitbook.io/cassandra/untitled/contribution-guidlines)
+* [Licensing Information](https://the-muses.gitbook.io/cassandra/untitled/licensing-information)
+* [Code of Conduct](https://)
+
+
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+## Setuting up for your Local Development
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+1.  **Download the repository.**
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+    Download our repo from this github page.
 
 1.  **Start developing.**
 
@@ -40,47 +37,44 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-## 🧐 What's inside?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+## Available Scripts
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+In the project directory, you can run:
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+### `npm start`
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+Runs the app in the development mode.  
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+The page will reload if you make edits.  
+You will also see any lint errors in the console.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+## Learn More
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+You can learn more at the [The Muses](https://the-muses.org).
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+# Check out our stack below:
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+<p align="center">
+  <a href="https://www.gatsbyjs.com">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby Frontend
+</h1>
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+We use Gatsby.js for a a few reasons. 
+1. It's built for performance, so we get optimal load speeds.
+2. Static pages require less data to be used by our learners, meaning it's more accessable.
+3. We love new and cutting edge stacks!
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
+Want to learn more about Gatsby.js? 
+(https://www.gatsbyjs.com/docs/gatsby-starters/)
 
 ## 🎓 Learning Gatsby
 
@@ -90,10 +84,13 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-## 💫 Deploy
+<p align="center">
+  <a href="https://www.prisma.io/">
+    <img alt="Gatsby" src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2019/06/graphql.png?fit=600%2C600&ssl=1" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Prisma GraphQL Backend
+</h1>
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+Using a GraphQL database not only allows us to further reduce the cost of accessing data to our students, but has future proofed our data to be used by other non-profit organisations.
