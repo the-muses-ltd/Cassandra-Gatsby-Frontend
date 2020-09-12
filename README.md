@@ -25,7 +25,6 @@ A platform to distribute educational resources online, which will be freely avai
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-default-starter/
     gatsby develop
     ```
 
@@ -35,21 +34,6 @@ A platform to distribute educational resources online, which will be freely avai
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.  
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.  
-You will also see any lint errors in the console.
 
 ## Learn More
 
@@ -86,7 +70,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 <p align="center">
   <a href="https://www.prisma.io/">
-    <img alt="Gatsby" src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2019/06/graphql.png?fit=600%2C600&ssl=1" width="60" />
+    <img alt="Gatsby" src="https://avatars1.githubusercontent.com/u/22095009?s=400&v=4" width="60" />
   </a>
 </p>
 <h1 align="center">
