@@ -16,6 +16,9 @@ const SecondPage = () => {
       description
       linkURL
       logoURL
+      categories {
+        category
+      }
       votes {
         positive
       }
@@ -32,7 +35,7 @@ const SecondPage = () => {
     <div className="container">
                     <section className="post-feed">
                         {data.courses.externalResources.map( course => (
-                            // The tag below includes the markup for each post - components/common/PostCard.js
+                            // The tag below includes the markup for each course
                             <CourseCard key={course.id} course={course} />
                             
                         ))}

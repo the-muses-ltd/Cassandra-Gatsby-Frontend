@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
-import CourseCard from "./courseCard"
+// import CourseCard from "./courseCard"
 
 import Header from "./header"
 import "./layout.css"

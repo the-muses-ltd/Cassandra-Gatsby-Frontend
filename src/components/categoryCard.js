@@ -4,16 +4,16 @@ import { Link } from 'gatsby'
 // import { Tags } from '@tryghost/helpers-gatsby'
 // import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
-const CourseCard = ({ course }) => {
-    const url = `/${course.id}/`
+const CategoryCard = ({ category }) => {
+    const url = `/${category.id}/`
     // const readingTime = readingTimeHelper(post)
 
     return (
-        <Link to={course.linkURL} target="_blank" className="post-card" data-sal="slide-up"
+        <Link to={"/"} target="_blank" className="post-card" data-sal="slide-up"
         data-sal-delay="0"
         data-sal-easing="ease">
             <header className="post-card-header">
-                {course.logoURL ? 
+                {/* {course.logoURL ? 
                     <div className="post-card-image" style={{
                         backgroundImage: `url(${course.logoURL})` , 
                     }}></div> : 
@@ -21,27 +21,27 @@ const CourseCard = ({ course }) => {
                         backgroundImage: `` , 
                     }}></div>
                 }
-                {course.categories.category ? <div className="post-card-tags"><h1>{course.categories.category}</h1></div> : <h3>Hello</h3>}
+                {course.categories.category ? <div className="post-card-tags"><h1>{course.categories.category}</h1></div> : <h1>Hello</h1>} */}
                 {/* {post.featured && <span>Featured</span>} */}
-                <h2 className="post-card-title">{course.title}</h2>
+                <div className="category-card-container"><h2 className="post-card-title">{category.category}</h2></div>
             </header>
-            <section className="post-card-excerpt">{course.description}</section>
-            <footer className="post-card-footer">
+            {/* <section className="post-card-excerpt">{course.description}</section> */}
+            {/* <footer className="post-card-footer">
                 <div className="post-card-footer-left">
-                    <div className="post-card-avatar">
+                    <div className="post-card-avatar"> */}
                         {/* {post.primary_author.profile_image ? */}
                             {/* <img className="author-profile-image" src={post.primary_author.profile_image} alt={post.primary_author.name}/> : */}
-                            <img className="default-avatar" src="https://yt3.ggpht.com/a/AATXAJyJPFeubx3SFVgLowUy98YiI-PNrUyabxdLJso7=s900-c-k-c0xffffffff-no-rj-mo" alt="MIT Opencourseware"/>
+                            {/* <img className="default-avatar" src="https://yt3.ggpht.com/a/AATXAJyJPFeubx3SFVgLowUy98YiI-PNrUyabxdLJso7=s900-c-k-c0xffffffff-no-rj-mo" alt="MIT Opencourseware"/> */}
                         {/* } */}
-                    </div>
+                    {/* </div>
                     <span>{ "MIT Open CourseWare" }</span>
                 </div>
-                <div className="post-card-footer-right">
+                <div className="post-card-footer-right"> */}
                     {/* <div>{"Example"}</div> */}
                     {/* <Link src={course.linkURL}>View</Link> */}
-                    <a href={course.linkURL} target="_blank">View</a>
+                    {/* <a href={course.linkURL} target="_blank">View</a>
                 </div>
-            </footer>
+            </footer> */}
         </Link>
     )
 }
@@ -65,4 +65,4 @@ const CourseCard = ({ course }) => {
 //     }).isRequired,
 // }
 
-export default CourseCard
+export default CategoryCard
