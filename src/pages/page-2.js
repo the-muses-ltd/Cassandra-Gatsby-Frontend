@@ -17,6 +17,7 @@ const SecondPage = () => {
       linkURL
       logoURL
       categories {
+        id
         category
       }
       votes {

@@ -7,6 +7,7 @@ import { Link } from 'gatsby'
 const CourseCard = ({ course }) => {
     const url = `/${course.id}/`
     // const readingTime = readingTimeHelper(post)
+    console.log(course)
 
     return (
         <Link to={course.linkURL} target="_blank" className="post-card" data-sal="slide-up"
@@ -21,7 +22,7 @@ const CourseCard = ({ course }) => {
                         backgroundImage: `` , 
                     }}></div>
                 }
-                {course.categories.category ? <div className="post-card-tags"><h1>{course.categories.category}</h1></div> : <h3>Hello</h3>}
+                {course.categories.category ? <div className="post-card-tags"><h1>{course.categories.category}</h1></div> : <h3 style={{"color": "#849095"}}>Category</h3>}
                 {/* {post.featured && <span>Featured</span>} */}
                 <h2 className="post-card-title">{course.title}</h2>
             </header>
