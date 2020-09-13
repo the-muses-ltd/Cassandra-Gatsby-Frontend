@@ -5,6 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+// import "./src/pages/tempelates/categoryPage"
 
 exports.createPages = async function({actions, graphql}) {
     const {data} = await graphql(`
@@ -30,12 +31,14 @@ exports.createPages = async function({actions, graphql}) {
 
     data.courses.categories.forEach(category => {
         const slug = category.category
-        const categoryName = category.category
-        console.log(categoryName)
+        // const categoryName = category.category
+        console.log(slug)
         actions.createPage({
             path: slug,
-            component: require.resolve(`./src/pages/tempelates/categoryPage`),
-            context: {category: categoryName},
+            component: require.resolve("./src/pages/tempelates/categoryPage"),
+            context: {
+                slug: slug
+            },
         })
     })
 

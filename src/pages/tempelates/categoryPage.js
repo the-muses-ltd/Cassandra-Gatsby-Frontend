@@ -1,17 +1,17 @@
 import React from "react"
 import {graphql} from "gatsby"
-import categorySingle from '../../components/categorySingle'
+// import categorySingle from '../../components/categorySingle'
 
-import { Link, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import CourseCard from "../../components/courseCard"
 
-const singleCategory = ({data, pageContext}) => {
-    console.log(pageContext.category)
-    const category = pageContext.category
-    console.log(data)
+const singleCategory = ({data}) => {
+    // console.log(pageContext.category)
+    // const category = pageContext.category
+    // console.log(data)
     return (
         <Layout>
           <SEO title="Cassandra: All Courses" />
@@ -32,29 +32,25 @@ const singleCategory = ({data, pageContext}) => {
         )
 }
 
+export default singleCategory
 
-
-
-
-export const singleCategoryQuery = graphql`
-    query SingleCategoryQuery($category: String!) {
-            courses {
-              externalResources(where: {categories_some: {category: $category}}) {
+export const query = graphql`
+    query SingleCategoryQuery($slug: String) {
+        courses {
+            externalResources(where: {categories_some: {category: $slug}}) {
+              id
+              title
+              description
+              linkURL
+              logoURL
+              categories(where: {}) {
                 id
-                title
-                description
-                linkURL
-                logoURL
-                categories{
-                  id
-                  category
-                }
-                votes {
-                  positive
-                }
+                category
+              }
+              votes {
+                positive
               }
             }
+          }
     }
 `
-
-export default singleCategory
