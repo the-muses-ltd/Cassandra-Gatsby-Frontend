@@ -5,10 +5,10 @@ import { Link } from 'gatsby'
 // import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
 const CategoryCard = ({ category }) => {
-    // const url = `/${category.category}/`
+    const url = `/${category.category}/`
 
     return (
-        <Link to={"/page-2"} target="_blank" className="post-card" data-sal="slide-up"
+        <Link to={url} target="_blank" className="post-card" data-sal="slide-up"
         data-sal-delay="0"
         data-sal-easing="ease">
             <header className="post-card-header">
