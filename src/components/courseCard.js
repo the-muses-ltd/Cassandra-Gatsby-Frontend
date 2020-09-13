@@ -9,7 +9,9 @@ const CourseCard = ({ course }) => {
     // const readingTime = readingTimeHelper(post)
 
     return (
-        <Link to={course.linkURL} target="_blank" className="post-card">
+        <Link to={course.linkURL} target="_blank" className="post-card" data-sal="slide-up"
+        data-sal-delay="0"
+        data-sal-easing="ease">
             <header className="post-card-header">
                 {course.logoURL ? 
                     <div className="post-card-image" style={{

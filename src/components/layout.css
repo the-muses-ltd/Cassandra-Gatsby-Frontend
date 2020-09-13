@@ -673,6 +673,7 @@ header {
 
 .post-card-avatar .default-avatar {
   width: 26px;
+  border-radius: 100px;
 }
 
 .index-title {

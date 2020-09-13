@@ -11,6 +11,7 @@
     "gatsby-plugin-offline": "^3.2.27",
     "gatsby-plugin-playground": "^1.0.6",
     "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-scroll-reveal": "0.0.7",
     "gatsby-plugin-sharp": "^2.6.32",
     "gatsby-source-filesystem": "^2.3.28",
     "gatsby-source-graphql": "^2.7.3",
