@@ -2,6 +2,12 @@
 
 A platform to distribute educational resources online, which will be freely available to anyone. The aim is to facilitate equal access to education for all.
 
+# Cassandra Architecture
+## Where does this application fit into the Cassandra Architecture?
+We have multiple applications running behind the scenes to drive the Cassandra project. The Gatsby frontend generates all of our resources for students to access the thousands of resources we store on the Cassandra Database. This is everyone point of open acess to everything we work so hard on at the Cassandra project.
+
+![Cassandra Architecture](https://github.com/the-muses-ltd/Multithreaded-Webcrawler-Cassandra/blob/master/misc/Cassandra%20Architecture%20(2).jpg)
+
 ## Documentation
 
 * [About Cassandra](https://the-muses.gitbook.io/cassandra/untitled/cassandra-open-education)
