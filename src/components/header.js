@@ -1,13 +1,14 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import BackgroundImage from "../../Assets/Comp-1_1.gif"
 
 const Header = ({ siteTitle }) => (
   <div className="viewport">
 
     <div className="viewport-top">
       {/* The main header section on top of the screen */}
-      <header className="site-head" style={{"background-image": `url(${"https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80"})`}}>
+      <header className="site-head" style={{"background-image": `url(${BackgroundImage})`}}>
           <div className="container">
               <div className="site-mast">
                   <div className="site-mast-left">
