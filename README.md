@@ -1,5 +1,7 @@
 # Cassandra Open Education
 
+![Cassandra Logo](https://drive.google.com/thumbnail?id=12bRPdn9nBj6q6lnAZSfQF_4RQGaoJTh6)
+
 A platform to distribute educational resources online, which will be freely available to anyone. The aim is to facilitate equal access to education for all.
 
 # Cassandra Architecture
