@@ -1,90 +1,32 @@
-# Cassandra Open Education
+# Cassandra Gatsby Frontend (retired)
 
-![Cassandra Logo](https://drive.google.com/thumbnail?id=12bRPdn9nBj6q6lnAZSfQF_4RQGaoJTh6)
+This repository held the Gatsby frontend for Cassandra, built in 2020. It read course data from a Prisma 1 backend and rendered the site. The app is retired and its code has been removed from the current tree.
 
-A platform to distribute educational resources online, which will be freely available to anyone. The aim is to facilitate equal access to education for all.
+## Where Cassandra lives now
 
-# Cassandra Architecture
-## Where does this application fit into the Cassandra Architecture?
-We have multiple applications running behind the scenes to drive the Cassandra project. The Gatsby frontend generates all of our resources for students to access the thousands of resources we store on the Cassandra Database. This is everyone point of open acess to everything we work so hard on at the Cassandra project.
+Cassandra was rebooted in 2026. It is now one static page that teaches how to learn anything online for free.
 
-![Cassandra Architecture](https://github.com/the-muses-ltd/Multithreaded-Webcrawler-Cassandra/blob/master/misc/Cassandra%20Architecture%20(2).jpg)
+- Live page: https://cassandraedu.netlify.app
+- Code and the story of the reboot: https://github.com/the-muses-ltd/Cassandra
 
-## Documentation
+The page is kept only in the Cassandra repository, so there is one copy to maintain.
 
-* [About Cassandra](https://the-muses.gitbook.io/cassandra/untitled/cassandra-open-education)
-* [Cassandra Road Map](https://the-muses.gitbook.io/cassandra/untitled/cassandra-road-map)
-* [Contributing Guidelines](https://the-muses.gitbook.io/cassandra/untitled/contribution-guidlines)
-* [Licensing Information](https://the-muses.gitbook.io/cassandra/untitled/licensing-information)
-* [Code of Conduct](https://)
+The old site, https://cassandra-development.netlify.app, now redirects to the live page.
 
+## The old code
 
+The Gatsby app is still in this repository's git history. The last commit with the app is [`c635453`](https://github.com/the-muses-ltd/Cassandra-Gatsby-Frontend/commit/c635453). To look at it:
 
-## 🚀 Quick start
+```
+git checkout c635453
+```
 
-## Setting up for your Local Development
+The old app depends on packages with known security issues and on a backend that no longer exists, so it will not build or run as it is.
 
-1.  **Download the repository.**
+## About The Muses
 
-    Download our repo from this github page.
+Cassandra is a project of [The Muses](https://the-muses.org), a UK non-profit working to remove economic barriers to education.
 
-1.  **Start developing.**
+## License
 
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    gatsby develop
-    ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
-
-
-## Learn More
-
-You can learn more at the [The Muses](https://the-muses.org).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-# Check out our stack below:
-
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Frontend
-</h1>
-
-We use Gatsby.js for a a few reasons: 
-1. It's built for performance, so we get optimal load speeds.
-2. Static pages require less data to be used by our learners, meaning it's more accessable.
-3. We love new and cutting edge stacks!
-
-Want to learn more about Gatsby.js? 
-(https://www.gatsbyjs.com/docs/gatsby-starters/)
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to their documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-<p align="center">
-  <a href="https://www.prisma.io/">
-    <img alt="Gatsby" src="https://avatars1.githubusercontent.com/u/22095009?s=400&v=4" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Prisma GraphQL Backend
-</h1>
-
-Using a GraphQL database not only allows us to further reduce the cost of accessing data to our students, but has future proofed our data to be used by other non-profit organisations.
-
-- **Interested in learning GraphQL or the Prisma framework? [Take a look at their documentation.](https://www.prisma.io/docs/).** 
+[0BSD](LICENSE)
