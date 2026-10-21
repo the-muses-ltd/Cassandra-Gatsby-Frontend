@@ -11,6 +11,8 @@ Cassandra was rebooted in 2026. It is now one static page that teaches how to le
 
 The page is kept only in the Cassandra repository, so there is one copy to maintain.
 
+The old site, https://cassandra-development.netlify.app, now redirects to the live page.
+
 ## The old code
 
 The Gatsby app is still in this repository's git history. The last commit with the app is [`c635453`](https://github.com/the-muses-ltd/Cassandra-Gatsby-Frontend/commit/c635453). To look at it:

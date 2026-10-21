@@ -1,0 +1,11 @@
+# The Gatsby app is retired. This site no longer builds anything:
+# it sends every visitor to the rebooted Cassandra page.
+[build]
+  command = "echo 'No build: this site redirects to https://cassandraedu.netlify.app'"
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "https://cassandraedu.netlify.app/"
+  status = 301
+  force = true
